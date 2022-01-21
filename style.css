@@ -60,9 +60,11 @@ textarea {
   
 .saveBtn {
     border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    border-radius: 8px;
     background-color: #06aed5;
+    padding: 2px;
     color: white;
 }
   
