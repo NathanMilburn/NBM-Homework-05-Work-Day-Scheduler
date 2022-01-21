@@ -16,8 +16,8 @@ textarea {
   
 .jumbotron {
     text-align: center;
-    background-color: transparent;
-    color: black;
+    background: linear-gradient(90deg, cornflowerblue 0%, black 100%);
+    color: mintcream;
     border-radius: 0;
     border-bottom: 10px solid black;
 }
