@@ -28,64 +28,66 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
+    <form id="appointment-form">
+      <input type="text" class="form-input w-100" id="appointment-input" name="appointment-input" placeholder="Enter Appointment Name and Time" />
+      <button class="btn btn-info">Add Appointment</button>
+    </form>
     <div class="container">
       <!-- Timeblocks go here -->
-      <form id="appointment-form">
-        <input type="text" class="form-input w-100" id="appointment-input" name="appointment-input" placeholder="Enter Appointment Name and Time" />
-        <button class="btn btn-info">Add Appointment</button>
-      </form>
       <!-- To Do: Add Calender Here -->
       
-      <table class="time-block">
+      <div id="currentHour"></div>
+      <table>
         <tr>
           <td>Time</td>
           <td>Availability</td>
           <td>Confirm</td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">09:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">10:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">11:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">12:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">1:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">2:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">3:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">4:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
-        <tr>
+        <tr class="time-block">
           <th class="hour">5:00</th>
           <th class="description">Free</th>
-          <th><button class="saveBtn">&#128274;</button></th>
+          <td><button class="saveBtn">&#128274;</button></td>
         </tr>
       </table>
     </div>
