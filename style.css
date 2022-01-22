@@ -28,6 +28,7 @@ textarea {
   
 .description {
     white-space: pre-wrap;
+    width: 80rem;
 }
   
 .time-block {
@@ -66,16 +67,28 @@ textarea {
   
 .saveBtn {
     border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    border-radius: 8px;
     background-color: #06aed5;
     padding: 2px;
     color: white;
+    height: 3rem;
+    width: 3.5rem;
+    text-align: right;
 }
   
 .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+}
+
+#appointment-column {
+    text-align: center;
+}
+
+#confirm-column {
+    text-align: right;
 }
 
 /* .scheduling, tr, th {

@@ -29,66 +29,73 @@
       <p id="currentDay" class="lead"></p>
     </header>
 
-    <form id="appointment-form">
-      <input type="text" class="form-input w-100" id="appointment-input" name="appointment-input" placeholder="Enter Appointment Name and Time" />
-      <button class="btn btn-info">Add Appointment</button>
-    </form>
     <div class="container">
       <!-- Timeblocks go here -->
       <!-- To Do: Add Calender Here -->
+      <form id="appointment-form">
+        <input type="text" class="form-input w-100" id="appointment-input" name="appointment-input" placeholder="Enter Appointment Name and Time" />
+        <button class="btn btn-info">Add Appointment</button>
+      </form>
       
       <div id="currentHour"></div>
-      <table>
-        <tr>
-          <td>Time</td>
-          <td>Availability</td>
-          <td>Confirm</td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">09:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">10:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">11:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">12:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">1:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">2:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">3:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">4:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
-        <tr class="time-block">
-          <th class="hour">5:00</th>
-          <th class="description">Free</th>
-          <td><button class="saveBtn">&#128274;</button></td>
-        </tr>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th id="appointment-column" scope="col">Appointment</th>
+            <th id="confirm-column" scope="col">Confirm</th>
+          </tr>
+        </thead>
+        
+        <!-- Create class that interacts with moment(). to account for current timestamp -->
+        <!-- Maybe use an IF statement for time parameters -->
+        <tbody>
+          <tr>
+            <th class="hour" scope="row">9AM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">10AM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">11AM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">12AM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">1PM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">2PM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">3PM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">4PM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">5PM</th>
+            <td align="center">Free</td>
+            <td align="right"><a class="saveBtn">&#128274;</a></td>
+          </tr>
+        </tbody>
       </table>
     </div>
 
