@@ -3,6 +3,7 @@ body {
     font-size: 16px;
     line-height: 1;
     background-color: rgb(182, 182, 182);
+    /* background-color: transparent; */
   }
   
 textarea {
@@ -65,6 +66,7 @@ textarea {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    text-align: center;
 }
   
 .past {
@@ -100,13 +102,17 @@ textarea {
     transition: all 0.3s ease-in-out;
 }
 
-#appointment-column {
+#time-column, #appointment-column, #confirm-column {
+    text-align: center;
+}
+
+/* #appointment-column {
     text-align: center;
 }
 
 #confirm-column {
-    text-align: left;
-}
+    text-align: center;
+} */
 
 /* .scheduling, tr, th {
     padding: 15px;
