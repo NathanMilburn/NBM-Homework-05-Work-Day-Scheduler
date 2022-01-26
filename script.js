@@ -1,6 +1,11 @@
 var currentDate = moment().format('dddd MMMM Do, YYYY');
-
 $("#currentDay").text(currentDate);
+
+var currentTime = $('.currentTime');
+var saveBtn = $('.saveBtn');
+var past = $('.past');
+var present = $('.present');
+var future = $('.future');
 
 // Placeholder
 
