@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
-    background-color: rgb(182, 182, 182);
+    background: linear-gradient(90deg, black 0%, cornflowerblue 100%);
     /* background-color: transparent; */
   }
   
@@ -11,7 +11,7 @@ textarea {
     border: none;
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
+    /* border-left: 1px solid black; */
     padding: 10px;
 }
   
@@ -49,7 +49,7 @@ textarea {
 }
 
 .time-block:hover {
-    background-color: lightgray;
+    box-shadow: 0 0.3rem 1.3rem 0 white;
 }
 
 .small {
@@ -83,6 +83,21 @@ textarea {
     background-color: #77dd77;
     color: white;
 }
+
+/* .time-block.past {
+    background-color: #d3d3d3;
+    color: white;
+}
+  
+.time-block.present {
+    background-color: #ff6961;
+    color: white;
+}
+  
+.time-block.future {
+    background-color: #77dd77;
+    color: white;
+} */
   
 .saveBtn {
     border-left: 1px solid black;
@@ -96,7 +111,12 @@ textarea {
     width: 3.5rem;
     text-align: right;
 }
-  
+
+.saveBtn:hover {
+    background-color: rgb(67, 207, 241);
+    box-shadow: 0 0.3rem 1.3rem 0 white;
+}
+
 .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
