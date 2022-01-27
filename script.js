@@ -46,15 +46,10 @@ function displayTime() {
 
 // styling time-blocks for hours that have alread passed
 function pastTimeSlot() {
-    // if(currentHour != moment().format('h:mm:ss a')){
-    //     element.classList.add('.past');
-    // }
-    for(var i = currentHour - 1; i <= 9; i--){
-        // var temp = document.getElementById("'#' + i")
-        if(i > 9 && i < 17){
-            document.getElementById(i).classList.remove("time-block");
+    for(var i = currentHour - 1; i >= 9; i--){
+        if(i >= 9 && i <= 17){
+            document.getElementById(i).classList.add('past');
         }
-        // temp.classList.add('.past');
     }
 }
 
