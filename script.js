@@ -52,10 +52,8 @@ function pastTimeSlot() {
 
 // styling time-blocks for the current hour
 function currentTimeSlot() {
-    for(var i = currentHour; i >= 9; i){
-        if(i <= 9 && i <= 17){
-            document.getElementById(i).classList.add('present');
-        }
+    if(currentHour >= 9 && currentHour <= 17){
+        document.getElementById(currentHour).classList.add('present');
     }
 }
 
@@ -69,7 +67,7 @@ function futureTimeSlot() {
 }
 
 pastTimeSlot()
-
+currentTimeSlot()
 futureTimeSlot()
 displayTime()
 
