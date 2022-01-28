@@ -59,9 +59,9 @@ function currentTimeSlot() {
 
 // styling time-blocks for hours that haven't alread passed
 function futureTimeSlot() {
-    for(var i = currentHour + 1; i <= 17; i++){
-        if(i <= 17){
-            document.getElementById(i).classList.add('future');
+    for(var j = +currentHour + 1; j <= 17; j++){
+        if(j <= 17){
+            document.getElementById(j).classList.add('future');
         }
     }
 }
