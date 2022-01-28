@@ -72,7 +72,7 @@ futureTimeSlot()
 displayTime()
 
 var saveBtn = $('.saveBtn');
-var inputText = $('textarea');
+var inputText = $('textarea[name=input-box]');
 
 // Accepting Input Function
 function getInput() {
