@@ -1,5 +1,5 @@
 // var inputAppointment = document.querySelector('textarea');
-var currentTime = document.querySelector('.currentTime');
+// var currentTime = document.querySelector('.currentTime');
 var currentHour = moment().format('H')
 // var saveBtn = document.querySelector('.saveBtn');
 var past = $('.past');
@@ -124,12 +124,3 @@ function maintain() {
 }
 
 maintain();
-
-// TO DO LIST:
-
-// Attach moment().format functions to timeslot fields to change colors based on current timestamp
-// Potentially use an IF statement for color changes based on current timestamp
-// Maybe replace form field with input fields in the appointment section of the table
-// Connect the save button with a localstorage save
-// Maybe use a fourth color option for appointments that have been committed (maybe yello?)
-// Learn more ways I can incorporate jquery UI and Bootstrap to do some of the work for me.

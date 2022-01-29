@@ -44,14 +44,14 @@ textarea {
   
 .time-block {
     text-align: center;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border-bottom: 2px solid black;
     border-top: 2px solid black;
 }
 
 /* Glow effect added to time blocks */
 .time-block:hover {
-    box-shadow: 0 0.3rem 1.3rem 0 white;
+    box-shadow: 0 0.3rem 1.3rem 0 cornflowerblue;
 }
 
 .small {
