@@ -6,17 +6,6 @@ var past = $('.past');
 var present = $('.present');
 var future = $('.future');
 
-
-// const timeBlock9 = document.getElementById('#9')
-// const timeBlock10 = document.getElementById('#10')
-// const timeBlock11 = document.getElementById('#11')
-// const timeBlock12 = document.getElementById('#12')
-// const timeBlock13 = document.getElementById('#13')
-// const timeBlock14 = document.getElementById('#14')
-// const timeBlock15 = document.getElementById('#15')
-// const timeBlock16 = document.getElementById('#16')
-// const timeBlock17 = document.getElementById('#17')
-
 // Timeblock variables for regular business hours (used increments from military time format)
 const timeBlock9 = $('#9');
 const timeBlock10 = $('#10');
@@ -71,44 +60,61 @@ currentTimeSlot()
 futureTimeSlot()
 displayTime()
 
-var saveBtn = $('.saveBtn');
-var inputText = $('textarea[name=input-box]');
+var inputText = $('textarea[name="input-box"]');
+var inputText2 = $('textarea[name="input-box1"]');
+var inputText3 = $('textarea[name="input-box2"]');
+var inputText4 = $('textarea[name="input-box3"]');
+var inputText5 = $('textarea[name="input-box4"]');
+var inputText6 = $('textarea[name="input-box5"]');
+var inputText7 = $('textarea[name="input-box6"]');
+var inputText8 = $('textarea[name="input-box7"]');
+var inputText9 = $('textarea[name="input-box8"]');
 
-// Accepting Input Function
+var saveBtn = $('.saveBtn');
+var save1 = $('#save1');
+
 function getInput() {
-    const inputField = {
-        inputText: inputText.val()
+
+    var inputField = {
+        inputText: inputText.val(),
+        inputText2: inputText2.val(),
+        inputText3: inputText3.val(),
+        inputText4: inputText4.val(),
+        inputText5: inputText5.val(),
+        inputText6: inputText6.val(),
+        inputText7: inputText7.val(),
+        inputText8: inputText8.val(),
+        inputText9: inputText9.val(),
     };
 
-    localStorage.getItem('textarea', JSON.stringify(inputField))
-};
-// Test for loop for get input 
-// var table = $('textarea[id]')
-// function getInput() {
-//     for(var i = 0; row; row = table.rows[i]; i++){
-//         if()
-//     }
-//     const inputField = {
-//         inputText: inputText.val()
-//     };
+    localStorage.setItem('text', JSON.stringify(inputField));
+}
 
-//     localStorage.getItem('textarea', JSON.stringify(inputField))
-// };
-
-// Saving Input Function
 function saveInput() {
-    inputValue = JSON.parse(localStorage.getItem('textarea'));
 
-    if(inputValue !== null) {
+    var inputValue = JSON.parse(localStorage.getItem('text'));
+
+    if (inputValue !== null) {
         inputText.text(inputValue.inputText);
-    }else{
+        inputText2.text(inputValue.inputText2);
+        inputText3.text(inputValue.inputText3);
+        inputText4.text(inputValue.inputText4);
+        inputText5.text(inputValue.inputText5);
+        inputText6.text(inputValue.inputText6);
+        inputText7.text(inputValue.inputText7);
+        inputText8.text(inputValue.inputText8);
+        inputText9.text(inputValue.inputText9);
+    }
+
+    else{
         return;
     }
-}
+};
 
 saveBtn.on('click', function(event){
     event.preventDefault();
     window.alert('Appointment Saved');
+    console.log(event.target)
     saveInput();
     getInput();
 });
