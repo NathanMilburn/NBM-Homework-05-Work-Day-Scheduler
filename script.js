@@ -3,17 +3,6 @@ var past = $('.past');
 var present = $('.present');
 var future = $('.future');
 
-// Timeblock variables for regular business hours (used increments from military time format)
-const timeBlock9 = $('#9');
-const timeBlock10 = $('#10');
-const timeBlock11 = $('#11');
-const timeBlock12 = $('#12');
-const timeBlock13 = $('#13');
-const timeBlock14 = $('#14');
-const timeBlock15 = $('#15');
-const timeBlock16 = $('#16');
-const timeBlock17 = $('#17');
-
 
 var currentDate = moment().format('dddd MMMM Do, YYYY');
 $("#currentDay").text(currentDate);
