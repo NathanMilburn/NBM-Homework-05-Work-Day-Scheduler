@@ -26,14 +26,14 @@ That is when I noticed that there were already classes that were premade to give
 
 The next challenge was to figure out where everything was supposed to go. I began by assigning the .hour class to my first column row to give it the white coloring with some additional formatting that I had added. 
 
-![TableStructure](./assets/images/table-formatting.PNG)
+![TableStructure](./images/table-formatting.PNG "Table Structuring")
 
 Next was trying to create an input field for each time-block but felt that the input fields desgin/formatting looked a bit jarring with white text space inside of each time block. That is where I found the styling for textarea. After some research I found out that textarea is an accepted tag for html. Once adding the textarea tag to the time-block cells the design looked exactly how I would have liked. 
 
 Before moving on to the javascript portion of this assignment, I wanted to make sure every element of the design process was completed. I likened this to the process of building a PC where the shell of the computer is the html, the internal components are the css and the javascript is the connection wires that put it all together.
 
 Colored Time Blocks (Pre Save Button Fix):
-![ColoredTimeBlocks](./assets/images/time-block-colored-pre-save-btn.PNG)
+![ColoredTimeBlocks](./images/time-block-colored-pre-save-btn.PNG "Colored Time Blocks Pre-Save Button Fix")
 
 Once my html and css sheets had been completed, I moved on to creating the functions that would color the time blocks based on what time it was when the user visited the website. 
 
@@ -44,7 +44,7 @@ Once I figured out how to iterate through the time blocks backwards through a fo
 Finally, I created the .future class function where it iterates forwards from the current hour and stops once the time surpasses 5PM.
 
 Time Block Styling Code:
-![TimeBlockStylingCode](./assets/images/time-block-styling.PNG)
+![TimeBlockStylingCode](./images/time-block-styling.PNG "Time Block Styling Code")
 
 
 [DeployedSchedulePlannerApplication](https://nathanmilburn.github.io/NBM-Homework-05-Work-Day-Scheduler/)
