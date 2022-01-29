@@ -1,7 +1,4 @@
-// var inputAppointment = document.querySelector('textarea');
-// var currentTime = document.querySelector('.currentTime');
 var currentHour = moment().format('H')
-// var saveBtn = document.querySelector('.saveBtn');
 var past = $('.past');
 var present = $('.present');
 var future = $('.future');
@@ -73,6 +70,7 @@ var inputText9 = $('textarea[name="input-box8"]');
 var saveBtn = $('.saveBtn');
 var save1 = $('#save1');
 
+// Get Input Function
 function getInput() {
 
     var inputField = {
@@ -90,6 +88,7 @@ function getInput() {
     localStorage.setItem('text', JSON.stringify(inputField));
 }
 
+// Save Input Function
 function saveInput() {
 
     var inputValue = JSON.parse(localStorage.getItem('text'));

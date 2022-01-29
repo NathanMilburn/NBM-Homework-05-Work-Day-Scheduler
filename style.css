@@ -3,7 +3,6 @@ body {
     font-size: 16px;
     line-height: 1;
     background: linear-gradient(90deg, black 0%, cornflowerblue 100%);
-    /* background-color: transparent; */
   }
   
 /* Text Input styling */
@@ -12,7 +11,6 @@ textarea {
     border: none;
     resize: none;
     color: #000000;
-    /* border-left: 1px solid black; */
     padding: 10px;
 }
   
@@ -44,7 +42,6 @@ textarea {
   
 .time-block {
     text-align: center;
-    /* border-radius: 15px; */
     border-bottom: 2px solid black;
     border-top: 2px solid black;
 }
@@ -90,7 +87,6 @@ textarea {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    /* border-radius: 8px; */
     background-color: #06aed5;
     padding: 2px;
     color: white;

@@ -46,6 +46,12 @@ Finally, I created the .future class function where it iterates forwards from th
 Time Block Styling Code:
 ![TimeBlockStylingCode](./images/time-block-styling.PNG "Time Block Styling Code")
 
+The final step was to create a series of functions for inputting text into the time block field and having it save to the local storage to be viewed in the same position later.
+
+One of the key things I knew I had to incorporate was to set items to the local storage when text was saved as well as a preventDefault call to avoid having the page reload whenever a button was clicked. 
+
+Given more time, I would have liked to add in a condition that makes it so users are unable to add appointments to time blocks that have already passed for that day, as well as reseting the input fields once the clock hits midnight.
+
 
 [DeployedSchedulePlannerApplication](https://nathanmilburn.github.io/NBM-Homework-05-Work-Day-Scheduler/)
 [DeployedSchedulePlannerRepository](https://github.com/NathanMilburn/NBM-Homework-05-Work-Day-Scheduler)
